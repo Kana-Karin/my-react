@@ -1,3 +1,31 @@
+nav {
+  height: 60px;
+}
+
+nav a {
+  color: #fff ;
+  text-decoration: none;
+  transition: all 0.4s 0s ease;
+  -webkit-transition: all 0.4s 0s ease;
+  -moz-transition: all 0.4s 0s ease;
+  -ms-transition: all 0.4s 0s ease;
+  -o-transition: all 0.4s 0s ease;
+}
+
+nav a :hover{
+  color: inherit;
+  opacity: 0.5;
+}
+
+.container-fluid {
+  padding: 0px;
+  z-index: 1;
+}
+
+.navbar-collapse {
+  background-color: #262626!important
+}
+
 .App {
   text-align: center;
 }
@@ -14,14 +42,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .App-link {
@@ -35,4 +63,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+/*=================================*/
+/*Home*/
+.Home {
+  margin: 40px;
+}
+
+.home-header {
+  padding-top: 120px!important;
+}
+
+/*=================================*/
+/*About*/
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  margin: 40px;
+}
+
+.section {
+  margin-bottom: 35px;
+}
+
+.ant-divider-inner-text {
+  font-size: min(max(16px, calc(1rem + ((1vw - 3.5px) * 0.7006))), 27px);
+}
+
+/*=================================*/
+/*Works*/
+.Works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-around;
+  margin: 40px;
+}
+
+/*=================================*/
+/*List*/
+
+/*=================================*/
+/*List*/
+
+/*=================================*/
+/*Footer*/
+.Footer {
+  height: 100px;
 }
