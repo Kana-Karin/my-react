@@ -19,7 +19,7 @@ export default function App() {
 
   return (
     <>
-      <MDBNavbar expand='lg' dark bgColor='dark'>
+      <MDBNavbar expand='md' dark bgColor='dark'>
         <MDBContainer fluid>
           <MDBNavbarToggler
             type='button'
@@ -32,13 +32,15 @@ export default function App() {
             <MDBIcon icon='bars' fas />
           </MDBNavbarToggler>
           <MDBCollapse navbar show={showNavNoToggler}>
-            <MDBNavbarBrand href='#'><img
+          <Link to='/'>
+            <MDBNavbarBrand href='https://kalinka-kana.herokuapp.com'><img
                           src={LOGO}
                           width="30"
                           height="30"
                           alt="Kalinka logo"
                       />
                       Kalinka</MDBNavbarBrand>
+                      </Link>
             <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
               <MDBNavbarItem>
                 <MDBNavbarLink tabIndex={5} active aria-current='page'>

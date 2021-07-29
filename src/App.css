@@ -64,7 +64,8 @@ nav a :hover{
     transform: rotate(360deg);
   }
 }
-
+/*=================================*/
+/*Nav*/
 nav .nav-link a {
   position: relative;
   display: inline-block;
@@ -86,20 +87,39 @@ nav .nav-link a:hover::after {
   transform: scale(1, 1);
 }
 
-.navbar-brand {
-  margin: 20px;
+.navbar {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 1;
 }
 
 
 /*=================================*/
 /*Home*/
+h1 {
+  font-size: min(max(2.3em, calc(1.3rem + ((1vw - 0.21875em) * 0.6474))), 2em)!important;
+}
+
 .Home {
   margin: 40px;
+  padding-top: 20px;
+
 }
 
 .home-header {
-  padding-top: 120px!important;
+  padding-top: 110px!important;
 }
+
+.Home img {
+  width: 100%;
+}
+
+.Home .col-6-img {
+  align-content: center;
+  display: grid;
+}
+
 
 /*=================================*/
 /*About*/
@@ -109,6 +129,7 @@ nav .nav-link a:hover::after {
   align-items: center;
   align-content: space-around;
   margin: 40px;
+  padding-top: 20px;
 }
 
 .section {
@@ -127,6 +148,7 @@ nav .nav-link a:hover::after {
   align-items: center;
   align-content: space-around;
   margin: 40px;
+  padding-top: 20px;
 }
 
 .Works h5 {
@@ -143,6 +165,7 @@ nav .nav-link a:hover::after {
   align-items: center;
   align-content: space-around;
   margin: 40px;
+  padding-top: 20px;
 }
 
 .Contact form {
@@ -167,4 +190,27 @@ nav .nav-link a:hover::after {
 /*Footer*/
 .Footer {
   height: 100px;
+}
+
+/*=================================*/
+@media (max-width: 400px){
+  .Home {
+    margin: 10px;
+    padding-top: 55px;
+  }
+
+  .About {
+    margin: 10px;
+    padding-top: 55px;
+  }
+
+  .Works {
+    margin: 10px;
+    padding-top: 55px;
+  }
+
+  .Contact {
+    margin: 10px;
+    padding-top: 55px;
+  }
 }

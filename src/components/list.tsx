@@ -1,5 +1,6 @@
 import React from 'react';
 import { Rate } from 'antd';
+import QueueAnim from 'rc-queue-anim';
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 //Image
@@ -19,8 +20,10 @@ import Docker from '../assets/img/docker.svg'
 
 export default function List() {
   return (
+    
     <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
       {/* Html and CSS3 */}
+      <QueueAnim>
       <MDBCol>
         <MDBCard className='h-100'>
           <MDBCardImage
@@ -47,6 +50,7 @@ export default function List() {
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
+      </QueueAnim>
 
       {/* Sass */}
       <MDBCol>
@@ -116,7 +120,7 @@ export default function List() {
           />
           <MDBCardBody>
             <MDBCardTitle>Ruby on rails</MDBCardTitle>
-            <MDBCardText><small>Laravelと比較するために勉強する予定です</small></MDBCardText>
+            <MDBCardText><small>Laravelと比較するために勉強する予定です。</small></MDBCardText>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -134,7 +138,7 @@ export default function List() {
           <MDBCardBody>
             <MDBCardTitle>React</MDBCardTitle>
             <Rate disabled defaultValue={2} />
-            <MDBCardText><small>独学で勉強中です。Gatsbyにも触れました。このサイトはReactで動いています。次の目標はNext.jsです</small></MDBCardText>
+            <MDBCardText><small>独学で勉強中です。Gatsbyにも触れました。次の目標はNext.jsです。Nintendo Switchやニコニコ動画がReactで動いていると知り、ずっと憧れていました。</small></MDBCardText>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -217,5 +221,6 @@ export default function List() {
         </MDBCard>
       </MDBCol>
     </MDBRow>
+    
   );
 }

@@ -6,7 +6,6 @@ function Contact() {
     return (
       <div className="Contact">
         <div>
-            <ContactForm />
         </div>
       </div>
     );

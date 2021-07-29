@@ -32,7 +32,7 @@ function About() {
       <Step title="2013/03" description="北海道芸術高等学校 卒業" />
       <Step title="2013/04" description="ロシア極東連邦総合大学 ロシア語地域学科 入学" />
       <Step title="2018/09" description="療養の為、ロシア極東連邦総合大学 ロシア語地域学科を中退" />
-      <Step title="2020/12" description="様々な短期アルバイト、派遣をこなしつつ転職活動を開始" />
+      <Step title="2020/12" description="北海道ガス株式会社でコールセンター事務として入社" />
       <Step title="2021/04" description="WEB/ITの仕事に携わりたく、技術を習得するために職業訓練校WEBデザインクリエーター科 入学。
       職業訓練校でHTML/CSS/Javascriptの勉強をきっかけに、WebGL、ReactやVueでのアプリ制作、Laravelを用いてSNSや予約システム、ECサイト構築に興味を持ち、
       授業中に独学で勉強" />
@@ -40,7 +40,7 @@ function About() {
     <Divider />
     <MDBCardTitle>趣味</MDBCardTitle>
         <MDBCardText>
-              <small>PS5/PS4/Steam/VR、React/Vue/Laravel/Railsの解説やドキュメントの読み漁り、読書、映画鑑賞、ジョジョ、仮面ライダー、ゲーム情報の読み漁り、イラレでイラストを描く</small>
+              <small>PS5/PS4/Steam/VR、React/Vue/Laravel/Railsの解説やドキュメントの読み漁り、読書、映画鑑賞、ジョジョ、仮面ライダー、ゲーム情報の読み漁り、イラレでイラストを描くなど</small>
             </MDBCardText>
           </MDBCardBody>
         </MDBCol>
