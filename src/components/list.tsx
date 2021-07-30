@@ -1,6 +1,5 @@
 import React from 'react';
 import { Rate } from 'antd';
-import QueueAnim from 'rc-queue-anim';
 import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBCardText, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 
 //Image
@@ -17,13 +16,11 @@ import Ps from '../assets/img/adobe-photoshop.svg'
 import Tsx from '../assets/img/typescript.svg'
 import Docker from '../assets/img/docker.svg'
 
-
 export default function List() {
   return (
     
     <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
       {/* Html and CSS3 */}
-      <QueueAnim>
       <MDBCol>
         <MDBCard className='h-100'>
           <MDBCardImage
@@ -50,7 +47,6 @@ export default function List() {
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
-      </QueueAnim>
 
       {/* Sass */}
       <MDBCol>
@@ -85,7 +81,7 @@ export default function List() {
           <MDBCardBody>
             <MDBCardTitle>Javascript</MDBCardTitle>
             <Rate disabled defaultValue={2} />
-            <MDBCardText><small>サイト制作において必要な部分を勉強中です。</small></MDBCardText>
+            <MDBCardText><small>サイト制作において必要な部分や、React,Vueなどと並行して勉強中です。</small></MDBCardText>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -120,7 +116,7 @@ export default function List() {
           />
           <MDBCardBody>
             <MDBCardTitle>Ruby on rails</MDBCardTitle>
-            <MDBCardText><small>Laravelと比較するために勉強する予定です。</small></MDBCardText>
+            <MDBCardText><small>Laravelと比較するために勉強する予定です。Djangoにも興味があります。</small></MDBCardText>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -156,7 +152,7 @@ export default function List() {
           <MDBCardBody>
             <MDBCardTitle>TypeScript</MDBCardTitle>
             <Rate disabled defaultValue={2} />
-            <MDBCardText><small>Reactを動かすために独学で勉強中です</small></MDBCardText>
+            <MDBCardText><small>Reactを動かすために独学で勉強中です。型定義をできるようになりたい・・・</small></MDBCardText>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -174,7 +170,7 @@ export default function List() {
           <MDBCardBody>
             <MDBCardTitle>Vue</MDBCardTitle>
             <Rate disabled defaultValue={2} />
-            <MDBCardText><small>独学で勉強中です。Reactと比較すると学習コストが低い上に、スコープでスタイルを一部のみ指定できる部分が気に入っています。Nuxt.jsを目標にしています</small></MDBCardText>
+            <MDBCardText><small>独学で勉強中です。Reactと比較すると学習コストが低い上に、スコープでスタイルを一部のみ指定できる手軽さが気に入っています。Nuxt.jsを目標にしています</small></MDBCardText>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>

@@ -40,7 +40,7 @@ function About() {
     <Divider />
     <MDBCardTitle>趣味</MDBCardTitle>
         <MDBCardText>
-              <small>PS5/PS4/Steam/VR、React/Vue/Laravel/Railsの解説やドキュメントの読み漁り、読書、映画鑑賞、ジョジョ、仮面ライダー、ゲーム情報の読み漁り、イラレでイラストを描くなど</small>
+              <small>PS5/PS4/Steam/Nintendo/VR、フロントエンド解説やドキュメントの読み漁り、読書、映画鑑賞、ジョジョ、仮面ライダー、イラレでイラストを描くなど</small>
             </MDBCardText>
           </MDBCardBody>
         </MDBCol>

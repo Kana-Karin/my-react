@@ -14,12 +14,12 @@ type Data = {
 const Datas: Data[] = [
     {
         id: 1,
-        title: '一番高い商品',
-        dtl: 'アイウエオ'
+        title: 'HTML/CSS',
+        dtl: '勉強'
     }, {
         id: 2,
-        title: '一番ださい商品',
-        dtl: 'かきくけこ'
+        title: 'SCSS',
+        dtl: '勉強'
     }
 ]
 
@@ -32,19 +32,20 @@ const List: React.FC = () => {
                   <MDBCard className='h-100'>
                     
                     <MDBCardBody>
-                      <MDBCardTitle>HTML5/CSS3</MDBCardTitle>
+                      <MDBCardTitle key={Data.title}>{ Data.title }</MDBCardTitle>
                       <MDBCardText>
                       <Rate disabled defaultValue={4} />
                       </MDBCardText>
                       <MDBCardText>
-                        <small>小学6年生の頃にHTML4/CSS/の基本を独学で学び、サイトを運営していました。
-                          職業訓練校にて、改めてHTML5/CSS3を学びました。</small>
+                        <small key={Data.id}>{ Data.dtl }</small>
                       </MDBCardText>
                     </MDBCardBody>
                   </MDBCard>
                 </MDBCol>
                 </MDBRow>
             )) }
-     </div>
+            </div>
     )
 }
+
+export default List;

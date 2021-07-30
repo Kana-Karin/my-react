@@ -23,6 +23,17 @@ function ContactForm() {
         <form onSubmit={handleSubmit}>
         <h1>Contact</h1>
         <MDBInput
+          id="name"
+          type="name" 
+          name="name"
+          label='Name'
+        />
+        <ValidationError 
+          prefix="Name" 
+          field="name"
+          errors={state.errors}
+        />
+        <MDBInput
           id="email"
           type="email" 
           name="email"
