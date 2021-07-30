@@ -30,15 +30,13 @@ const List: React.FC = () => {
                 <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
                 <MDBCol>
                   <MDBCard className='h-100'>
-                    
                     <MDBCardBody>
                       <MDBCardTitle>HTML5/CSS3</MDBCardTitle>
                       <MDBCardText>
                       <Rate disabled defaultValue={4} />
                       </MDBCardText>
-                      <MDBCardText>
-                        <small>小学6年生の頃にHTML4/CSS/の基本を独学で学び、サイトを運営していました。
-                          職業訓練校にて、改めてHTML5/CSS3を学びました。</small>
+                      <MDBCardText key = {Data.id}>
+                        {Data.dtl}
                       </MDBCardText>
                     </MDBCardBody>
                   </MDBCard>
